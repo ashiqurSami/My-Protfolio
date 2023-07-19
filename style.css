@@ -58,6 +58,23 @@ html{
     z-index: -1;
     opacity: .8;
 }
+
+
+@media only screen and (max-width: 768px) {
+    #home::before {
+        height: 600px; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #home::before {
+        height: 400px; 
+    }
+}
+
+
+
+
 .main{
     display: flex;
     flex-direction: column;
@@ -206,6 +223,29 @@ html{
     height:150px;
     background-color: white;
 }
+
+@media only screen and (max-width: 768px) {
+    .box, .box_1 {
+        width: 90%;
+    }
+
+    .row {
+        justify-content: flex-start; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .box, .box_1 {
+        width: 100%;
+        height: auto; 
+    }
+
+    .box img, .box_1 img {
+        width: 120%;
+        height: auto; 
+    }
+}
+
 
 #contact{
     display:flex;
